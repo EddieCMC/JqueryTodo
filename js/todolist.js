@@ -32,16 +32,16 @@ $(document).ready(function() {
             id: id
         })
         setData()
-        $('.list').append(
-            `<div class="list-item uncompleted" data-id="${id}">
+        $('.list').append(`
+            <div class="list-item uncompleted" data-id="${id}">
                 <div class="list-item__state">X</div>
                 <div class="list-item__content">${text}</div>
                 <div class="list-item__action">
                 <button class="list-item__delete">delete</button>
                 <button class="list-item__mark">標示成已完成</button>
                 </div>
-            </div>`
-        )
+            </div>
+        `)
         $('input[name=todo]').val('');
         id++
     })
