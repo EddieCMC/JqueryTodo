@@ -1,0 +1,45 @@
+.wrapper{
+    width: 400px;
+    margin: 0 auto;
+
+    .filters {
+        display: flex;
+
+        div{
+            border:solid 1px rgb(212, 38, 38);
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    };
+
+    .list{
+        border:1px solid gray;
+        margin-top: 10px;
+        
+
+        .list-item{
+            display: flex;
+            position: relative;
+            padding:5px;
+
+                .list-item__state{
+                    margin:0 10px;
+                }
+                
+                .list-item__action{
+                    .list-item__delete{
+                        position: absolute;
+                        right: 0;
+                        top: 0.2;
+                        color: red;
+                    }
+                    .list-item__mark{
+                        position: absolute;
+                        right: 60px;
+                        top: 0.2;
+                    }
+                }
+            
+        }
+    }
+}

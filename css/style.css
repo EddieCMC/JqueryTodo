@@ -1,0 +1,35 @@
+.wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+.wrapper .filters {
+  display: flex;
+}
+.wrapper .filters div {
+  border: solid 1px #d42626;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.wrapper .list {
+  border: 1px solid gray;
+  margin-top: 10px;
+}
+.wrapper .list .list-item {
+  display: flex;
+  position: relative;
+  padding: 5px;
+}
+.wrapper .list .list-item .list-item__state {
+  margin: 0 10px;
+}
+.wrapper .list .list-item .list-item__action .list-item__delete {
+  position: absolute;
+  right: 0;
+  top: 0.2;
+  color: red;
+}
+.wrapper .list .list-item .list-item__action .list-item__mark {
+  position: absolute;
+  right: 60px;
+  top: 0.2;
+}/*# sourceMappingURL=style.css.map */
