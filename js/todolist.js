@@ -20,6 +20,15 @@ function render(todoList){
                 </div>
             </div>`
         )
+
+        $('.filters__all').click(function(){
+            $('.list-item').show()
+        })
+    
+        $('.filters__completed').click(function(){
+            $('.list-item').hide()
+            $('.list-item.uncompleted').show()
+        })
     }
 }
 
@@ -68,13 +77,6 @@ $(document).ready(function() {
         setData();
     })
 
-    $('.filters__all').click(function(){
-        $('.list-item').show()
-    })
-
-    $('.filters__completed').click(function(){
-        $('.list-item').hide()
-        $('.list-item.uncompleted').show()
-    })
+    
     
 })
